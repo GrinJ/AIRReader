@@ -52,7 +52,7 @@ class AIRReader:
 
     def convertData(self):
         """
-        Converts 2004 values from the AIR specification to normal values
+        Converts the values from the AIR specification to normal values
         """
         for key, val in self.data.items():
             if "-" in key:
