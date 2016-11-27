@@ -26,4 +26,4 @@ Usage
 
 Or create a symbolic link
 
-`ln -s /projectsDir/AIRReader/src/SYNReader/AIRReader.py projectsDir/newProj/`
+`ln -s /projectsDir/AIRReader/src/AIRReader/AIRReader.py projectsDir/newProj/`
