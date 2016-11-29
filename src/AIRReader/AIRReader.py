@@ -63,7 +63,7 @@ class AIRReader:
             else:
                 subkey = key
 
-            for num in range(0, self.data[key].__len__()):
+            for num in range(0, len(self.data[key])):
                 if self.data[key][num] != -9999.0:
                     self.data[key][num] = self.__convert(subkey, self.data[key][num])
 
