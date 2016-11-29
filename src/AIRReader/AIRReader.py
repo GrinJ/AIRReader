@@ -50,11 +50,14 @@ class AIRReader:
         except IOError:
             self.noProblem = False
 
-    def convertData(self):
+    def convertData(self, keys = []):
         """
         Converts the values from the AIR specification to normal values
         """
-        for key, val in self.data.items():
+        if keys == []:
+            keys = self.keys
+
+        for key in keys:
             if "-" in key:
                 subkey = key[:key.find("-")]
             else:
